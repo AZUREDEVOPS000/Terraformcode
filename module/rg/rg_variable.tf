@@ -1,7 +1,7 @@
 variable "rg_name" {
     description = "Name of the Resource Group"
     type = string
-    default     = "RG_storage"
+    default     = "RG_remotestorage123"
 }
 variable "location" {
     description = "Location where the resources will be created"
@@ -12,8 +12,8 @@ variable "location" {
     description = "Tags for the resources"
     type = map(string)
     default = {
-          "envirnoment" = "DEV"
+          "envirnoment" = "prod"
           "source" = "terraform"
-          "purpose" = "DEVPRACTICE"
+          "purpose" = "prodsupport"
     }
     }

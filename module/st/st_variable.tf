@@ -12,7 +12,7 @@ variable "account_replication_type" {
     variable "st_name" {
     description = "Storage account name"
     type = string
-    default      = "kartikstorageaccount"
+    default      = "remotestorageaccount123"
  }
    variable "location" {
     description = "location of Storage account"
@@ -26,7 +26,7 @@ variable "account_replication_type" {
     description = "Tags for the resources"
     type = map(string)
     default = {
-          "envirnoment" = "DEV"
+          "envirnoment" = "PROD"
           "source" = "terraform"
     }
     }
