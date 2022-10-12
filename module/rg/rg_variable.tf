@@ -6,7 +6,7 @@ variable "rg_name" {
 variable "location" {
     description = "Location where the resources will be created"
     type = string
-    default      = "uksouth"
+    default      = "eastus"
     }
     variable "tags" {
     description = "Tags for the resources"
@@ -16,19 +16,4 @@ variable "location" {
           "source" = "terraform"
           "purpose" = "DEVPRACTICE"
     }
-    }
- variable "account_tier" {
-    description = "Type of account tier"
-    type = string
-    default     = "Standard"
-}
-variable "account_replication_type" {
-    description = "type of replicaiton"
-    type = string
-    default      = "GRS"
-    }
-    variable "st_name" {
-    description = "Storage account name"
-    type = string
-    default      = "kartikstorageaccount"
     }
